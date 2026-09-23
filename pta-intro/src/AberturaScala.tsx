@@ -214,7 +214,7 @@ const Wipe: React.FC = () => {
 };
 
 // Partículas quadradas (referência aos quadrados do símbolo) subindo.
-const Particles: React.FC = () => {
+export const Particles: React.FC = () => {
   const frame = useCurrentFrame();
   return (
     <AbsoluteFill>
@@ -243,7 +243,7 @@ const Particles: React.FC = () => {
 };
 
 // Símbolo da Mentoria Scala Fitness redesenhado em vetor (unidades da logo original).
-const Icon: React.FC = () => {
+export const Icon: React.FC = () => {
   const frame = useCurrentFrame();
 
   return (
@@ -309,7 +309,7 @@ const Icon: React.FC = () => {
 };
 
 // Linha do texto da logo, recortada da arte original e revelada com máscara.
-const TextLine: React.FC<{ top: number; height: number; delay: number }> = ({
+export const TextLine: React.FC<{ top: number; height: number; delay: number }> = ({
   top,
   height,
   delay,
