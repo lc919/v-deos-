@@ -5,6 +5,7 @@ import { AberturaScala } from "./AberturaScala";
 import { EstruturaStories } from "./stories/EstruturaStories";
 import { LivroBiomecanica } from "./livro/LivroBiomecanica";
 import { VinhetaFeminino } from "./feminino/VinhetaFeminino";
+import { DURACAO, IogurtesLeitissimo } from "./leitissimo/IogurtesLeitissimo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -38,6 +39,14 @@ export const RemotionRoot: React.FC = () => {
         id="VinhetaFeminino"
         component={VinhetaFeminino}
         durationInFrames={975}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="IogurtesLeitissimo"
+        component={IogurtesLeitissimo}
+        durationInFrames={DURACAO}
         fps={30}
         width={1920}
         height={1080}
